@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf−8">
+  <title>plantilla</title>
+</head>
+<body>
+ <script language='Javascript'>
+var suma = 0;
+var contador = 0;
+var respuesta = 's';
+
+while (respuesta == 's') {
+    var numero = prompt("Introduce un número:");
+    suma += +numero;
+    contador++;
+    respuesta = prompt("¿Quieres introducir otro número? (responde 's' para continuar)");
+}
+
+var media = suma / contador;
+document.write("La media de los números introducidos es: " + media);
+ </script>
+</body>
+</html>
